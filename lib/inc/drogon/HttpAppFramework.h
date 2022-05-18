@@ -1273,6 +1273,8 @@ class DROGON_EXPORT HttpAppFramework : public trantor::NonCopyable
      * @param characterSet The character set of the database server.
      * @param timeout The timeout in seconds for executing SQL queries. zero or
      * negative value means no timeout.
+     * @param autoBatch enable auto batch mode or not. This parameter is only
+     * available for the PostgreSQL driver(version >= 14.0)
      *
      * @note
      * This operation can be performed by an option in the configuration file.

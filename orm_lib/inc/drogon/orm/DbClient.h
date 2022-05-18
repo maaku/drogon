@@ -116,6 +116,7 @@ class DROGON_EXPORT DbClient : public trantor::NonCopyable
      * 'filename'.
      *
      * @param connNum: The number of connections to database server;
+     * @param autoBatch: Use the auto batch mode or not.
      */
     static std::shared_ptr<DbClient> newPgClient(const std::string &connInfo,
                                                  const size_t connNum,
